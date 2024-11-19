@@ -80,8 +80,7 @@ async fn main() -> std::io::Result<()> {
     //     .unwrap();
 
     // Rustls
-    let ca_cert = "ca-certificates/cert.pem";
-    let cert_file = File::open(ca_cert)?;
+    let cert_file = File::open("ca-certificates/cert.pem")?;
     let mut buf = BufReader::new(cert_file);
     let mut root_store = RootCertStore::empty();
     for cert in rustls_pemfile::certs(&mut buf) {
