@@ -10,7 +10,7 @@ Instructions to run example, see [https://github.com/bikeshedder/deadpool/blob/m
 
 ## Postgres
 
-- Create postgres `deadpook` db.
+- Create postgres `deadpool` db.
 - Load data `fixture.sql`
 - Create `.env` file
 
